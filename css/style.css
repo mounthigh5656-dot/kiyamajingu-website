@@ -1,1 +1,167 @@
+/* ==========================
+   木山神宮公式ホームページ
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+    background:#faf8f2;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ヘッダー */
+
+header{
+    background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    text-align:center;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.logo h1{
+    font-size:36px;
+    color:#8b0000;
+}
+
+.logo p{
+    color:#666;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#222;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#b8860b;
+}
+
+/* トップ画像 */
+
+.hero{
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+    background:rgba(0,0,0,.35);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero-text h2{
+    font-size:42px;
+}
+
+.hero-text p{
+    font-size:22px;
+}
+
+/* セクション */
+
+section{
+    max-width:1100px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+section h2{
+    font-size:34px;
+    color:#8b0000;
+    margin-bottom:20px;
+    border-left:8px solid #b8860b;
+    padding-left:15px;
+}
+
+section img{
+    width:100%;
+    border-radius:10px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+section p{
+    font-size:18px;
+}
+
+section ul{
+    padding-left:20px;
+}
+
+section li{
+    margin-bottom:12px;
+}
+
+/* フッター */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+
+/* スマホ */
+
+@media(max-width:768px){
+
+.logo h1{
+    font-size:28px;
+}
+
+.hero-text{
+    width:90%;
+}
+
+.hero-text h2{
+    font-size:28px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+nav ul{
+    gap:15px;
+}
+
+section h2{
+    font-size:28px;
+}
+
+}
